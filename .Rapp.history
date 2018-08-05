@@ -1,0 +1,99 @@
+a
+a <- available.packages()
+a
+a <- available.packages()
+head(rownames(a),3)
+install.packages("slidify")
+install.packages(c("slidify","ggplot2","devtools"))
+library(ggplot2)
+library(devtools)
+library(slidify)
+search()
+install.packages("KernSmooth")
+library(KernSmooth)
+install.packages("xlsx")
+install.packages("RMySQL")
+filename<- "household_power_consumption.txt"
+data<-read.delim(filename,header = TRUE, sep =";", dec=".")
+data_subset<-data[(data$Date == "1/2/2007" | data$Date == "2/2/2007"),]
+data_subset$Global_active_power<-as.numeric(as.character(data_subset$Global_active_power))
+plot(data_subset$Global_active_power,data_subset$Date)
+plot(data_subset$Date,data_subset$Global_active_power)
+str(data_subset)
+summary(data_subset)
+?plot
+data_subset$Date<-as.Date(data_subset$Date)
+str(data_subset)
+data_subset$Date<-as.Date(data_subset$Date, format='%d-%M-%Y')
+str(data_subset)
+data_subset$Date<-as.Date(data_subset$Date, format='%dd-%mm-%YYYY')
+str(data_subset)
+data_subset<-data[(data$Date == "1/2/2007" | data$Date == "2/2/2007"),]
+str(data_subset)
+data_subset$Date<-as.Date(data_subset$Date, format='%dd-%mm-%YYYY')
+str(data_subset)
+data_subset<-data[(data$Date == "1/2/2007" | data$Date == "2/2/2007"),]
+data_subset$Date<-as.Date(data_subset$Date, format='%d/%m/%YYYY')
+str(data_subset)
+data_subset<-data[(data$Date == "1/2/2007" | data$Date == "2/2/2007"),]
+data_subset<-as.character(data_subset$Date)
+str(data_subset$Date)
+str(data_subset)
+>
+data_subset<-data[(data$Date == "1/2/2007" | data$Date == "2/2/2007"),]#
+>
+data_subset<-data[(data$Date == "1/2/2007" | data$Date == "2/2/2007"),]
+data_subset$Date<-as.character(data_subset$Date)
+str(data_subset)
+data_subset$Date<-as.Date(data_subset$Date, format='%d/%m/%YYYY')
+str(data_subset)
+data_subset<-data[(data$Date == "1/2/2007" | data$Date == "2/2/2007"),]
+data_subset<-data[(data$Date == "1/2/2007" | data$Date == "2/2/2007"),]
+str(data_subset)
+data_subset$Date<-as.character(data_subset$Date)
+data_subset$Date<-as.Date(data_subset$Date, format='%d/%m/%Y')
+str(data_subset)
+data_subset<-data[(data$Date == "1/2/2007" | data$Date == "2/2/2007"),]
+data_subset$Global_active_power<-as.numeric(as.character(data_subset$Global_active_power))#
+        data_subset$Date<-as.Date(as.character(data_subset$Date), format='%d/%m/%Y')
+plot(data_subset$Date,data_subset$Global_active_power)
+plot(data_subset$Date,data_subset$Global_active_power)
+data_subset<-data[(data$Date == "1/2/2007" | data$Date == "2/2/2007" | data$Date == "3/2/2007"),]
+data_subset$Global_active_power<-as.numeric(as.character(data_subset$Global_active_power))#
+        data_subset$Date<-as.Date(as.character(data_subset$Date), format='%d/%m/%Y')
+plot(data_subset$Date,data_subset$Global_active_power)
+lines(fdata_subset$Date,data_subset$Global_active_power, col="blue")
+lines(data_subset$Date,data_subset$Global_active_power, col="blue")
+str(data_subset)
+data_subset$Time<-strptime(data_subset$Time, "%H:%M:%S")
+str(data_subset)
+data_subset<-data[(data$Date == "1/2/2007" | data$Date == "2/2/2007" | data$Date == "3/2/2007"),]
+data_subset$Date_Time<-paste(data_subset$Date,data_subset$Time)
+str(data_subset)
+data_subset$Date_Time<-strptime(data_subset$Date_Time)
+data_subset$Date_Time<-strptime(data_subset$Date_Time, format = "%H:%M:%S")
+str(data_subset)
+data_subset$Date_Time<-strptime(data_subset$Date_Time)
+data_subset$Date_Time<-paste(data_subset$Date,data_subset$Time)
+data_subset$Date_Time<-strptime(data_subset$Date_Time, format = "%d/%m/%Y %H:%M:%S")
+str(data_subset)
+plot(data_subset$Date_Time,data_subset$Global_active_power)
+filename<- "household_power_consumption.txt"
+data<-read.delim(filename,header = TRUE, sep =";", dec=".")
+data_subset<-data[(data$Date == "1/2/2007" | data$Date == "2/2/2007"),]
+data_subset$Global_active_power<-as.numeric(as.character(data_subset$Global_active_power))#
+        data_subset$Date<-as.Date(as.character(data_subset$Date), format='%d/%m/%Y')
+data_subset$Date_Time<-paste(data_subset$Date,data_subset$Time)#
+        data_subset$Date_Time<-strptime(data_subset$Date_Time, format = "%d/%m/%Y %H:%M:%S")
+plot(data_subset$Date_Time,data_subset$Global_active_power)
+str(data_subset)
+data_subset<-data[(data$Date == "1/2/2007" | data$Date == "2/2/2007"),]
+data_subset$Global_active_power<-as.numeric(as.character(data_subset$Global_active_power))#
+        data_subset$Date<-as.Date(as.character(data_subset$Date), format='%d/%m/%Y')
+str(data_subset)
+data_subset$Date_Time<-paste(data_subset$Date,data_subset$Time)
+str(data_subset)
+data_subset$Date_Time<-strptime(data_subset$Date_Time), format = "%Y-%m-%d %H:%M:%S")
+data_subset$Date_Time<-strptime(data_subset$Date_Time, format = "%Y-%m-%d %H:%M:%S")
+str(data_subset)
+matplot(data_subset)
